@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><?php echo $site_name ?> | Index</title>
+
+    <link href="<?php echo $base_url.$assets ?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $base_url.$assets ?>css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">My Weblog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#register" class="dropdown-toggle" data-toggle="dropdown">Inscription <b class="caret"></b></a>
+                            <ul class="dropdown-menu" >
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form class="form" method="post" action="#register">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="ulogin">Login</label>
+                                                    <input type="text" class="form-control" id="ulogin" placeholder="Login" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="password2">Confirmation du password</label>
+                                                    <input type="password" class="form-control" id="password2" placeholder="Confirmation du password" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-success btn-block">S'inscrire</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Connexion <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form class="form" method="post" action="#login">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> Garder ma session active
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-success btn-block">Se connecter</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Accueil</a>
+                    <a href="#" class="list-group-item">Profile</a>
+                    <a href="#" class="list-group-item">Contact</a>
+                    <a href="#" class="list-group-item">Administrer</a>
+                </div>
+
+                <div class="well">
+                    <h4>Rechercher sur le Blog</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+
+                <div class="well">
+                    <h4>Tags Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#dinosaurs">Dinosaurs</a>
+                                </li>
+                                <li><a href="#spaceships">Spaceships</a>
+                                </li>
+                                <li><a href="#fried-foods">Fried Foods</a>
+                                </li>
+                                <li><a href="#wild-animals">Wild Animals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#alien-abductions">Alien Abductions</a>
+                                </li>
+                                <li><a href="#business-casual">Business Casual</a>
+                                </li>
+                                <li><a href="#robots">Robots</a>
+                                </li>
+                                <li><a href="#fireworks">Fireworks</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Tag</h4>
+                                <h4><a href="#">Titre</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, reprehenderit..</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 Commentaires</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Tag</h4>
+                                <h4><a href="#">Titre</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, reprehenderit..</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 Commentaires</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Tag</h4>
+                                <h4><a href="#">Titre</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, reprehenderit..</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 Commentaires</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Tag</h4>
+                                <h4><a href="#">Titre</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, reprehenderit..</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 Commentaires</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Tag</h4>
+                                <h4><a href="#">Titre</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, reprehenderit..</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 Commentaires</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Web@cademie 2013</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
